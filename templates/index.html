@@ -12,15 +12,16 @@
     </header>
 
     <nav style="display: flex; justify-content: center; gap: 20px; padding: 10px; background-color:blue;">
-        <a href="/">Home</a>
-        <a href="/cart">Cart</a>
-        {% if username %}
-            <span>Welcome, {{ username }}!</span>
-            <a href="/logout">Logout</a>
-        {% else %}
-            <a href="/login">Login</a>
-        {% endif %}
-    </nav>
+    <a href="/" style="color:white;">Home</a>
+    <a href="/cart" style="color:white;">Cart</a>
+    {% if username %}
+        <span style="color:white; font-weight:bold;">Welcome, {{ username }}!</span>
+        <a href="/logout" style="color:white;">Logout</a>
+    {% else %}
+        <a href="/login" style="color:white;">Login</a>
+    {% endif %}
+</nav>
+
 
     <h2 style="text-align: center;">Featured Products</h2>
     <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
