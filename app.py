@@ -176,5 +176,6 @@ def place_order():
     mongo.db.users.update_one({'_id': user['_id']}, {'$set': {'cart': []}})
     return render_template('place_order.html', username=session['username'])
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run()
+
